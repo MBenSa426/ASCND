@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grey ASCND Hoodie</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Montserrat,sans-serif;
+}
+
+body{
+    background:#000;
+    color:white;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 80px;
+    background:rgba(0,0,0,0.9);
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:700;
+    letter-spacing:4px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.product{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
+    padding:150px 10%;
+    flex-wrap:wrap;
+}
+
+.product img{
+    width:450px;
+    max-width:100%;
+    border-radius:15px;
+}
+
+.info{
+    max-width:450px;
+}
+
+.info h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.info p{
+    color:#ccc;
+    line-height:1.8;
+}
+
+.price{
+    font-size:2rem;
+    margin:25px 0;
+    font-weight:bold;
+}
+
+label{
+    display:block;
+    margin-bottom:10px;
+    margin-top:20px;
+}
+
+select{
+    width:100%;
+    padding:15px;
+    background:#111;
+    color:white;
+    border:1px solid #333;
+    border-radius:8px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin-top:25px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ddd;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:#111;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">ASCND</div>
+
+    <ul class="nav-links">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="product.html">Shop</a></li>
+        <li><a href="about us.html">About</a></li>
+        <li><a href="contact us.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="product">
+
+    <img src="Images/ASCND gray Hodie (model 1).png" alt="Grey ASCND Hoodie">
+
+    <div class="info">
+
+        <h1>Grey ASCND Hoodie</h1>
+
+        <p>
+            A premium grey hoodie built for comfort and everyday wear.
+            Featuring a clean, modern streetwear design, this hoodie
+            delivers the perfect balance of style, confidence, and comfort.
+        </p>
+
+        <div class="price">£49.99</div>
+
+        <label>Select Size</label>
+
+        <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>2XL</option>
+        </select>
+
+        <button>Add To Cart</button>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 ASCND. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

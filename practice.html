@@ -1,0 +1,604 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCND</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Montserrat',sans-serif;
+        }
+        
+        body{
+            background:#000;
+            color:white;
+        }
+        
+        nav{
+            position:fixed;
+            top:0;
+            width:100%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:25px 80px;
+            background:rgba(0,0,0,0.8);
+            backdrop-filter:blur(10px);
+        }
+        
+        .logo{
+            font-size:2rem;
+            font-weight:700;
+            letter-spacing:4px;
+        }
+        
+        .nav-links{
+            display:flex;
+            list-style:none;
+            gap:30px;
+        }
+        
+        .nav-links a{
+            text-decoration:none;
+            color:white;
+            font-weight:600;
+        }
+        
+        .hero{
+            height:100vh;
+            background:url("Images/ASCND black hodie (model 1).png");
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+        
+        .hero-content h1{
+            font-size:5rem;
+            letter-spacing:8px;
+        }
+        
+        .hero-content p{
+            margin:20px 0;
+            font-size:1.2rem;
+        }
+        
+        .btn{
+            display:inline-block;
+            padding:15px 35px;
+            background:white;
+            color:black;
+            text-decoration:none;
+            font-weight:bold;
+            border-radius:30px;
+        }
+        
+        .collections{
+            padding:100px 10%;
+            text-align:center;
+        }
+        
+        .collections h2{
+            font-size:2.5rem;
+            margin-bottom:50px;
+        }
+        
+        .cards{
+            display:flex;
+            gap:30px;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+        
+        .card{
+            width:300px;
+            overflow:hidden;
+            border-radius:15px;
+            background:#111;
+        }
+        
+        .card img{
+            width:100%;
+            display:block;
+        }
+        
+        .card h3{
+            padding:20px;
+        }
+        
+        .about{
+            padding:100px 15%;
+            text-align:center;
+        }
+        
+        .about h2{
+            margin-bottom:20px;
+            font-size:2.5rem;
+        }
+        
+        .about p{
+            max-width:700px;
+            margin:auto;
+            line-height:1.8;
+        }
+        
+        footer{
+            text-align:center;
+            padding:40px;
+            background:#111;
+        }
+        </style>
+    <nav>
+        <div class="logo">ASCND</div>
+
+        <ul class="nav-links">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="product.html">Shop</a></li>
+            <li><a href="about us.html">About</a></li>
+            <li><a href="contact us.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>ASCND</h1>
+            <p>Rise Above. Wear Confidence.</p>
+            <a href="#" class="btn">SHOP NOW</a>
+        </div>
+    </section>
+
+    <section class="collections">
+        <h2>Featured Collection</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="Images/ASCND black hodie (model 1).png" alt="">
+                <h3>Black Hoodie</h3>
+            </div>
+
+            <div class="card">
+                <img src="Images/ASCND white Hodie (model 2).png" alt="">
+                <h3>White Hoodie</h3>
+            </div>
+
+            <div class="card">
+                <img src="Images/ASCND gray Hodie (model 1).png" alt="">
+                <h3>Grey Hoodie</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>Our Mission</h2>
+        <p>
+            ASCND is more than clothing. It's a mindset built around
+            ambition, confidence and growth. Every piece is designed
+            for people who refuse to stay where they are and strive
+            to rise above.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 ASCND. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCND | Shop</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Montserrat', sans-serif;
+        }
+
+        body{
+            background:#000;
+            color:#fff;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 8%;
+            background:#111;
+            position:sticky;
+            top:0;
+        }
+
+        .logo{
+            font-size:2rem;
+            font-weight:700;
+            letter-spacing:4px;
+        }
+
+        .nav-links{
+            display:flex;
+            list-style:none;
+            gap:30px;
+        }
+
+        .nav-links a{
+            color:white;
+            text-decoration:none;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        .nav-links a:hover{
+            color:#999;
+        }
+
+        .shop-header{
+            text-align:center;
+            padding:80px 20px;
+        }
+
+        .shop-header h1{
+            font-size:4rem;
+            margin-bottom:10px;
+        }
+
+        .shop-header p{
+            color:#aaa;
+        }
+
+        .products{
+            padding:50px 8%;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:40px;
+        }
+
+        .product{
+            background:#111;
+            border-radius:15px;
+            overflow:hidden;
+            transition:0.3s;
+        }
+
+        .product:hover{
+            transform:translateY(-10px);
+        }
+
+        .product img{
+            width:100%;
+            height:400px;
+            object-fit:cover;
+        }
+
+        .product-info{
+            padding:20px;
+            text-align:center;
+        }
+
+        .product-info h3{
+            margin-bottom:10px;
+        }
+
+        .price{
+            color:#ccc;
+            margin-bottom:15px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:12px 30px;
+            background:white;
+            color:black;
+            text-decoration:none;
+            border-radius:25px;
+            font-weight:600;
+        }
+
+        .btn:hover{
+            background:#ddd;
+        }
+
+        footer{
+            background:#111;
+            text-align:center;
+            padding:30px;
+            margin-top:50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">ASCND</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about us.html">About</a></li>
+            <li><a href="contact us.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="shop-header">
+        <h1>SHOP</h1>
+        <p>Premium streetwear for those who rise above.</p>
+    </section>
+
+    <section class="products">
+
+        <div class="product">
+            <img src="Images/ASCND black hodie (model 1).png" alt="Black Hoodie">
+            <div class="product-info">
+                <h3>Black Hoodie</h3>
+                <p class="price">£49.99</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="Images/ASCND white Hodie (model 2).png" alt="White Hoodie">
+            <div class="product-info">
+                <h3>White Hoodie</h3>
+                <p class="price">£49.99</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="Images/ASCND gray Hodie (model 1).png" alt="Grey Hoodie">
+            <div class="product-info">
+                <h3>Grey Hoodie</h3>
+                <p class="price">£49.99</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 ASCND. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style/style.css">
+    <title> contact ASCND</title>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head> 
+   <header>
+       <img src="Images/ASCND logo.png" alt="ACND Logo" width="125" height="125">
+
+           
+   
+       <h1>ASCND</h1>
+       
+       <nav>
+        <ul class="top-level">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">ASCND</a></li>
+          <li><a href="contact us.html">Contact Us</a></li>
+          <li><a href="about us.html">about us</a></li>
+          <li><a href="practice.html">Practice</a></li>
+        </ul>
+      </nav>
+
+    </header>
+   
+    <main>
+    
+        <section class="co_6">
+    <h2>contact form</h2>
+    <p> Hsve a question about ASCND? we'd love to hesr from you! Get in touch with our support, product information, or any enqules our ASCND hoodie</p>
+    <form action="">
+
+       <div>
+        <label for="name">name</label>
+        <input type="name" name="name" id="name" required> 
+       </div>
+       <div>
+        <label for="email"> Email adress:</label>
+        <input type="email" name="email" id="email" required>
+       </div>
+        <div>
+        <label for="subject"> subject</label>
+        <input type="subject" name="subject" id="subject" required> 
+       </div>
+        <label for="message">message</label>
+        
+        <textarea name="message" id="message" rows="8" placeholder="type message here" required></textarea>
+        <button type="submit">submit message</button>
+        <div>  
+      </form>
+      </section>
+        <h2>find us here </h2>
+      <p>come visit us at this location </p>
+        <address>
+        ASCND <br>
+        23 Walton Rd <br>
+        liverpool <br>
+        L4 4AD
+        </address>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d733.5545341147082!2d-2.97573730742603!3d53.43113283167343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2suk!4v1794239302841!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </main>
+      <footer>
+     &copy; 2026 Mohamed Ben Saud
+      </footer>
+
+   </body>
+   </html>
+
+
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title> About ASCND</title>
+
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <header>
+        <header>
+            <img src="Images/ASCND logo.png" alt="ACND Logo" width="125" height="125">
+     
+                
+        
+            <h1>ASCND</h1>
+            
+            <nav>
+              <ul class="top-level">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">ASCND</a></li>
+                <li><a href="contact us.html">Contact Us</a></li>
+                <li><a href="about us.html">about us</a></li>
+                <li><a href="practice.html">Practice</a></li>
+              </ul>
+            </nav>
+
+         </header>
+          
+
+      <h1> About ASCND</h1>
+
+       <p>At ASCND, we believe clothing should be more than just fashion. It should represent confidence, comfort, and individuality. Our brand is dedicated to creating stylish, high-quality apparel that helps people express themselves while feeling comfortable every day.
+        Inspired by adventure, simplicity, and modern streetwear culture, ASCND offers versatile designs that fit any lifestyle. Whether you're at college, out with friends, exploring new places, or relaxing at home, our clothing is designed to look great and feel even better.
+        We aim to inspire people to push beyond their limits, embrace new opportunities, and rise above every challenge. Every piece is created with the idea that confidence starts with what you wear and where you choose to go.
+        ASCND - Rise Above.</p>
+        <img src="Images/dom.webp" alt="Welcome" width="350" height="100"
+
+
+
+<footer>
+        &copy; 2026 Mohamed Ben Saud
+    </footer>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>ASCND</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<header>
+
+    <nav>
+        <ul class="top-level">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Shop</a></li>
+          <li><a href="contact us.html">Contact Us</a></li>
+          <li><a href="about us.html">About Us</a></li>
+          <li><a href="practice.html">Practice</a></li>
+        </ul>
+      </nav> 
+    <p>At ASCND, we believe clothing should be more than just fashion. It should represent confidence, comfort, and individuality. </p>
+  </header>
+   
+<main>
+
+
+          <section class="co_6">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+       <section class="col-6">
+        
+        
+       </section>
+       <img src="Images/ASCND black hodie (model 1).png" alt="ASCND balck hodie m1" width="400" height="400">
+       <h3>Black ASCND Hoodie</h3>
+      
+       <img src="Images/ASCND white Hodie (model 2).png" alt="ASCND white hodie m2" width="450" height="450">
+       <h3>White ASCND Hoodie</h3>
+
+       <img src="Images/ASCND gray Hodie (model 1).png" alt="ASCND gray hodie m1" width="400" height="400">
+
+       <div class="product">

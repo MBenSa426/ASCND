@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCND</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Montserrat',sans-serif;
+        }
+        
+        body{
+            background:#000;
+            color:white;
+        }
+        
+        nav{
+            position:fixed;
+            top:0;
+            width:100%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:25px 80px;
+            background:rgba(0,0,0,0.8);
+            backdrop-filter:blur(10px);
+        }
+        
+        .logo{
+            font-size:2rem;
+            font-weight:700;
+            letter-spacing:4px;
+        }
+        
+        .nav-links{
+            display:flex;
+            list-style:none;
+            gap:30px;
+        }
+        
+        .nav-links a{
+            text-decoration:none;
+            color:white;
+            font-weight:600;
+        }
+        
+        .hero{
+            height:100vh;
+            background:url(Images/ASCND\ Background\ \(2\).png);
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+        
+        .hero-content h1{
+            font-size:5rem;
+            letter-spacing:8px;
+        }
+        
+        .hero-content p{
+            margin: 15px;
+            font: size 1px;;
+        }
+        
+        .btn{
+            display:inline-block;
+            padding:15px 35px;
+            background:white;
+            color:black;
+            text-decoration:none;
+            font-weight:bold;
+            border-radius:30px;
+        }
+        
+        .collections{
+            padding:100px 10%;
+            text-align:center;
+        }
+        
+        .collections h2{
+            font-size:2.5rem;
+            margin-bottom:50px;
+        }
+        
+        .cards{
+            display:flex;
+            gap:30px;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+        
+        .card{
+            width:300px;
+            overflow:hidden;
+            border-radius:15px;
+            background:#111;
+        }
+        
+        .card img{
+            width:100%;
+            display:block;
+        }
+        
+        .card h3{
+            padding:20px;
+        }
+        
+        .about{
+            padding:100px 15%;
+            text-align:center;
+        }
+        
+        .about h2{
+            margin-bottom:20px;
+            font-size:2.5rem;
+        }
+        
+        .about p{
+            max-width:700px;
+            margin:auto;
+            line-height:1.8;
+        }
+        
+        footer{
+            text-align:center;
+            padding:40px;
+            background:#111;
+        }
+        </style>
+    <nav>
+        <div class="logo">ASCND</div>
+
+        <ul class="nav-links">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="product.html">Shop</a></li>
+            <li><a href="about us.html">About</a></li>
+            <li><a href="contact us.html">Contact</a></li>
+            <li><a href="practice.html">Practice page</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>ASCND</h1>
+            <p>Rise Above. Wear Confidence.</p>
+            <a href="product.html" class="btn">SHOP NOW</a>
+        </div>
+    </section>
+
+    <section class="collections">
+        <h2>Featured Collection</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="Images/ASCND black hodie (model 1).png" alt="">
+                <h3>Black Hoodie</h3>
+            </div>
+
+            <div class="card">
+                <img src="Images/ASCND white Hodie (model 2).png" alt="">
+                <h3>White Hoodie</h3>
+            </div>
+
+            <div class="card">
+                <img src="Images/ASCND gray Hodie (model 1).png" alt="">
+                <h3>Grey Hoodie</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>Our Mission</h2>
+        <p>
+            ASCND is more than clothing. It's a mindset built around
+            ambition, confidence and growth. Every piece is designed
+            for people who refuse to stay where they are and strive
+            to rise above.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 ASCND.Mohamed Ben saud.</p>
+    </footer>
+
+</body>
+</html>
